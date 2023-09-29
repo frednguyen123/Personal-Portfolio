@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Git, KUTE.js, Partiles.js, Figma, Photoshop">
+  <meta name="description" content="Frontend Developer">
+  <meta name="author" content="Frederick Nguyen">
+  <meta http-equiv="refresh" content="600">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0; name='viewport' />
+  <meta name="viewport" content="width=device-width" />
+
+  <link rel="shortcut icon" type="x-icon" href="./assets/footer__logo.PNG">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <script defer src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.0/dist/kute.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("dfN5yqfbieFI3bYuT");
+    })();
+  </script>
+
+  <title>Frederick Nguyen | Web Developer</title>
+</head>
+<body>
+  <section id="home-section">
+    <div id="particles-js"></div>
+    <div class="container">
+      <ul id="progress__bar">
+        <li>
+          <a title="Home" href="#home-section">
+            <i class="far fa-circle side-nav-bar circle1"></i>
+          </a>
+        </li>
+        <li>
+          <a title="About" href="#about-section">
+            <i class="far fa-circle side-nav-bar circle2"></i>
+          </a>
+        </li>
+        <li>
+          <a title="Projects" href="#projects-section">
+            <i class="far fa-circle side-nav-bar circle3"></i>
+          </a>
+        </li>
+        <li>
+          <a title="Contact" href="#contact-section">
+            <i class="far fa-circle side-nav-bar circle4"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="row">
+        <nav>
+          <figure>
+            <h1 class="logo__header"><span class="green">Frederick</span> Nguyen</h1>
+          </figure>
+          <ul class="nav__link--list">
+            <li class="nav__link">
+              <a href="#" id="details-anchor" class="
+                nav__link--anchor
+                link__hover-effect
+              ">Details</a>
+            </li>
+            <div id="portfolio__modal" class="portfolio__modal">
+              <h4 class="portfolio__modal--title">Personal Portfolio</h4>
+              <h5 class="portfolio__modal--sub-title">HTML, CSS, JavaScript, Git,<br> React & Python</h5>
+              <hr>
+              <p class="portfolio__modal--para">
+                while(alive) {<br>
+                  Why was the coder bad at relationships?();<br>
+                  He had commitment issues();<br>
+                  (with Git, haha);<br>
+                }
+              </p>   
+              <a href="https://github.com/frednguyen123" target="_blank" class="portfolio__modal--link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <li class="nav__link">
+              <a href="#about-section" class="
+                nav__link--anchor
+                link__hover-effect
+              ">About</a>
+            </li>
+            <li class="nav__link">
+              <a href="#projects-section" class="
+                nav__link--anchor
+                link__hover-effect
+              ">Projects</a>
+            </li>
+            <li class="nav__link nav__link--special">
+              <a href="#contact-section" class="
+                nav__link--anchor nav__link--anchor--special
+              ">Contact</a>
+            </li>
+          </ul>
+          <div class="nav__container--mobile">
+            <button class="btn__menu" onclick="openMenu()">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+              <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <i class="fas fa-times"></i>
+              </button>
+              <ul class="menu__links">
+                <li class="menu__list">
+                  <a href="#home-section" class="menu__link" onclick="closeMenu()">HOME</a>
+                </li>
+                <li class="menu__list">
+                  <a href="#about-section" class="menu__link" onclick="closeMenu()">ABOUT</a>
+                </li>
+                <li class="menu__list">
+                  <a href="#projects-section" class="menu__link" onclick="closeMenu()">PROJECTS</a>
+                </li>
+                <li class="menu__list">
+                  <a href="#contact-section" class="menu__link" onclick="closeMenu()">CONTACT</a>
+                </li>
+                <div class="portfolio__modal--mobile">
+                  <h4 class="portfolio__modal--title">Personal Portfolio</h4>
+                  <h5 class="portfolio__modal--sub-title portfolio__modal--sub-title--mobile">HTML, CSS, JavaScript, Git,<br> React & Python</h5>
+                  <a href="https://github.com/frednguyen123" target="_blank" class="portfolio__modal--link--mobile">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </ul>
+            </div>
+          </div> 
+        </nav>
+
+        <header>
+          <div class="header__content">
+            <h1 class="header__title text">Evolving the Digital <span class="green text-reverse">Experience</span></h1>
+            <a class="header__btn" href="#about-section">ABOUT ME</a>
+          </div>
+          <figure class="header__img--wrapper">
+            <img id="header__img" src="./assets/imageport.png">
+          </figure>
+        </header>
+      </div>
+      <ul class="imp__link--list">
+        <li class="imp__link--wrapper">
+          <a href="#" target="_blank">
+            <i class="fab fa-linkedin-in imp__link--anchor div1"></i>
+          </a>
+        </li>
+        <li class="imp__link--wrapper">
+          <a href="https://github.com/frednguyen123" target="_blank">
+            <i class="fab fa-github imp__link--anchor div2"></i>
+          </a>
+        </li>
+        <li class="imp__link--wrapper">
+          <a href="" target="_blank">
+            <i class="fas fa-file-pdf imp__link--anchor div4"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="wave-wrapper">
+    <img class="waves" src="./assets/layered-waves-2-success.svg" alt="waves">
+  </div>
+
+  <section id="about-section" class="white-sections">
+    <div class="container">
+      <div class="row">
+        <div class="myself">
+          <h2 class="myself__title">I'm <span class="green">Fred!</span>&nbsp;<span class="hand-wave">👋</span></h2>
+          <p class="myself__para">
+            I'm a <span class="green">23-year-old </span><span class="green">front-end engineer</span> with a strong passion for building web applications
+            with great user experiences that positively impact the world. This digital space showcases my expertise in creating <span class="green">visually engaging</span>, user-friendly, 
+            and <span class="green">responsive</span> web interfaces. From crafting seamless navigation elements to <span class="green">optimizing user experiences</span>, I take pride in producing web designs 
+            that not only look beautiful but also <span class="green">perform seamlessly</span> across a myriad of devices.
+          <figure class="myself__img--wrapper">
+            <img src="./assets/about me.svg" alt="About Me" id="myself__img">
+          </figure>
+        </div>
+        <div class="tech-stack">
+          <h2 class="stack__title">This is my <span class="green">technology stack</span></h2>
+          <div class="language__list">
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="HTML Logo" class="language__img">
+              </figure>
+              <span class="language__name">HTML</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="CSS Logo" class="language__img">
+              </figure>
+              <span class="language__name">CSS</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="JavaScript Logo" class="language__img">
+              </figure>
+              <span class="language__name">JavaScript</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="React Logo" class="language__img">
+              </figure>
+              <span class="language__name">React</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/free-firebase-3521427-2944871.png?f=webp&w=256" alt="Firebase Logo" class="language__img">
+              </figure>
+              <span class="language__name">Firebase</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src="https://cdn.freebiesupply.com/logos/large/2x/git-icon-logo-png-transparent.png" alt="Git Logo" class="language__img">
+              </figure>
+              <span class="language__name">Git</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/GNOME_Terminal_icon_2019.svg/1024px-GNOME_Terminal_icon_2019.svg.png" alt="Terminal Logo" class="language__img">
+              </figure>
+              <span class="language__name">Terminal</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt="Visual Studio Code Logo" class="language__img">
+              </figure>
+              <span class="language__name">VSCode</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src="https://cdn.freebiesupply.com/logos/large/2x/python-5-logo-png-transparent.png" alt="Python Logo" class="language__img">
+              </figure>
+              <span class="language__name">Python</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" alt="TypeScript Logo" class="language__img">
+              </figure>
+              <span class="language__name">TypeScript</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src="https://www.freelogovectors.net/wp-content/uploads/2021/09/adobe-photoshop-logo-freelogovectors.net_.png" alt="Photoshop" class="language__img">
+              </figure>
+              <span class="language__name">Photoshop</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/figma-1-logo.png" alt="Figma Logo" class="language__img">
+              </figure>
+              <span class="language__name">Figma</span>
+            </div>
+          </div>
+        </div>
+        <div id="quotes" class="quotes">
+          <blockquote id="quotes__para" class="quotes__para">
+            “Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”
+          </blockquote>
+          <button id="quotes__btn" class="quotes__btn">
+            NEW QUOTE
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <img src="./assets/layered-waves-2-flipped.svg" alt="waves" class="waves">
+
+  <section id="projects-section">
+    <div class="container">
+      <div class="row">
+        <h2 class="projects__title">Here are some of my <span class="green">projects</span></h2>
+        <ul class="honeycomb">
+          <li class="honeycomb-cell">
+            <img class="honeycomb-cell_img" src="./assets/recipeapp.PNG">
+            <div class="honeycomb-cell_title">Forkify</div>
+            <div class="project__description">
+              <h4 class="project__description--title">Recipe Database</h4>
+              <h5 class="project__description--sub-title">HTML, CSS, JavaScript, & Git</h5>
+              <p class="project__description--para">
+                Users can Search and bookmark any recipe!
+              </p>
+              <div class="project__description--links">
+                <a href="https://github.com/frednguyen123/Recipe-App" target="_blank" class="project__description--link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://recipe-fasur5ee5-frednguyen123.vercel.app/" class="project__description--link" target="_blank">
+                  <i class="fas fa-link"></i>
+                </a>
+              </div>
+            </div>
+        </li>
+        <li class="honeycomb-cell">
+            <img class="honeycomb-cell_img" src="./assets/ecomlibrary.PNG">
+            <div class="honeycomb-cell_title">E-commerce Bookstore</div>
+            <div class="project__description project__description--middle">
+              <h4 class="project__description--title">Online Bookstore</h4>
+              <h5 class="project__description--sub-title">HTML, CSS, JavaScript, React</h5>
+              <p class="project__description--para">
+                Browse and buy from a selection of books!
+              </p>
+              <div class="project__description--links">
+                <a href="https://github.com/frednguyen123/Ecommerce-React" target="_blank" class="project__description--link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://ecommerce-react-frednguyen123.vercel.app/" class="project__description--link" target="_blank">
+                  <i class="fas fa-link"></i>
+                </a>
+              </div>
+            </div>
+        </li>
+        <li class="honeycomb-cell">
+          <img class="honeycomb-cell_img" src="./assets/crypto.PNG">
+            <div class="honeycomb-cell_title project__title--middle">CryptoConnect</div>
+            <div class="project__description project__description--middle">
+              <h4 class="project__description--title">CryptoCurrency Tracker</h4>
+              <h5 class="project__description--sub-title">HTML, CSS, JS, React, Material-UI</h5>
+              <p class="project__description--para">
+                Track your cryptocurrency watchlist!
+              </p>
+              <div class="project__description--links">
+                <a href="https://github.com/frednguyen123/Cryptocurrency-Tracker-App" target="_blank" class="project__description--link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://cryptocurrency-tracker-app.vercel.app/" class="project__description--link" target="_blank">
+                  <i class="fas fa-link"></i>
+                </a>
+              </div>
+            </div>
+        </li>
+        <li class="honeycomb-cell">
+          <img class="honeycomb-cell_img" src="./assets/searchengine.PNG">
+            <div class="honeycomb-cell_title">Pyro Portal</div>
+            <div class="project__description project__description--middle">
+              <h4 class="project__description--title">Search Engine</h4>
+              <h5 class="project__description--sub-title">HTML, CSS, JavaScript, React, Next.Js, Tailwind CSS</h5>
+              <p class="project__description--para">
+                Search engine with Google API
+              </p>
+              <div class="project__description--links">
+                <a href="https://github.com/frednguyen123/Search-Engine-Clone" target="_blank" class="project__description--link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://search-engine-clone.vercel.app/" class="project__description--link" target="_blank">
+                  <i class="fas fa-link"></i>
+                </a>
+              </div>
+            </div>
+        </li>
+        <li class="honeycomb-cell">
+          <img class="honeycomb-cell_img" src="./assets/exercisetracker.PNG">
+            <div class="honeycomb-cell_title">Mapty</div>
+            <div class="project__description last__child">
+              <h4 class="project__description--title">Exercise Location Tracker</h4>
+              <h5 class="project__description--sub-title">HTML, CSS, JavaScript & API</h5>
+              <p class="project__description--para">
+                Pin your running and cycling exercises on a map!
+              </p>
+              <div class="project__description--links">
+                <a href="https://github.com/frednguyen123/Mapty-App" target="_blank" class="project__description--link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://mapty-app-nine.vercel.app/" class="project__description--link" target="_blank">
+                  <i class="fas fa-link"></i>
+                </a>
+              </div>
+            </div>
+        </li>
+        <li class="honeycomb-cell">
+          <img class="honeycomb-cell_img" src="./assets/barber.PNG">
+            <div class="honeycomb-cell_title">Barbershop</div>
+            <div class="project__description project__description--sixth">
+              <h4 class="project__description--title">Barbershop</h4>
+              <h5 class="project__description--sub-title">HTML, CSS, JavaScript, & Git</h5>
+              <p class="project__description--para">
+                Barber website showcases their services!
+              </p>
+              <div class="project__description--links">
+                <a href="https://github.com/frednguyen123/Client-Barbershop" target="_blank" class="project__description--link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://client-barbershop.vercel.app/" class="project__description--link" target="_blank">
+                  <i class="fas fa-link"></i>
+                </a>
+              </div>
+            </div>
+        </li>
+        <li class="honeycomb-cell">
+          <img class="honeycomb-cell_img" src="./assets/bankwebsite.PNG">
+            <div class="honeycomb-cell_title">Bankist</div>
+            <div class="project__description last__child">
+              <h4 class="project__description--title">Banking Website</h4>
+              <h5 class="project__description--sub-title">HTML, CSS, JavaScript & Git</h5>
+              <p class="project__description--para">
+                Browse Financial Services Website!
+              </p>
+              <div class="project__description--links">
+                <a href="https://github.com/frednguyen123/Bankist-Website" target="_blank" class="project__description--link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://bankist-website-gamma.vercel.app/" class="project__description--link" target="_blank">
+                  <i class="fas fa-link"></i>
+                </a>
+              </div>
+            </div>
+        </li>
+        <li class="honeycomb-cell">
+          <img class="honeycomb-cell_img" src="./assets/ProjectOneJPG-min.jpg">
+            <div class="honeycomb-cell_title">Hulu UI</div>
+            <div class="project__description last__child">
+              <h4 class="project__description--title">Hulu Clone</h4>
+              <h5 class="project__description--sub-title">HTML, CSS,  JavaScript, React, Next.Js, Tailwind CSS</h5>
+              <p class="project__description--para">
+                Browse selected shows and movies!
+              </p>
+              <div class="project__description--links">
+                <a href="https://github.com/frednguyen123/Hulu-Clone" target="_blank" class="project__description--link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://hulu-clone-eight-flax.vercel.app/" class="project__description--link" target="_blank">
+                  <i class="fas fa-link"></i>
+                </a>
+              </div>
+            </div>
+        </li>
+        <li class="honeycomb-cell honeycomb_hidden">
+        </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <div class="wave-wrapper">
+    <img class="waves" src="./assets/layered-waves-2-success.svg" alt="waves">
+  </div>
+
+  <section id="contact-section" class="white-section-2">
+    <div class="container">
+      <div class="row">
+        <div class="contact__header">
+          <div class="contact__title--wrapper">
+            <div class="contact__centrer"></div>
+            <h2 class="contact__title">Contact <span class="green">Me!</span></h2>
+          </div>
+          <p class="contact__para">
+            Feel free to contact me at any time.Hey, thanks for reaching out! I appreciate the opportunity. 
+            I'm genuinely looking forward to connecting further. Let's chat soon!
+          </p>
+          <div class="contact__block">
+            <figure class="contact__img--contact--wrapper">
+              <img src="./assets/undraw_engineering_team_a7n2.svg" alt="Contact Me" id="contact__img--contact">
+            </figure>
+          </div>
+        </div>
+        <div class="contact__methods">
+          <form name="contact" id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input class="input" name="user_name" type="text" required/>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input class="input" name="user_email" type="email" required/>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea class="input" name="message" type="text" required></textarea>
+            </div>
+            <button type="submit" id="contact__submit" class="form__submit">
+              Send it my way
+            </button>
+          </form>
+          <div class="contact__socials">
+            <div class="contact__links">
+              <h3 class="contact__mail">
+                <a id="contact__mail--anchor" href="mailto:fred.nguyen.2000@gmail.com" target="_blank" title="Email">
+                  Email: fred.nguyen.2000@gmail.com
+                </a>
+              </h3>
+            </div>
+            <figure class="contact__img--agreement--wrapper">
+              <img src="./assets/inbox.svg" id="contact__img--agreement">
+            </figure>
+          </div>
+          <svg 
+            id="visual" 
+            viewBox="0 0 900 600" 
+            width="900" 
+            height="600" 
+            xmlns="http://www.w3.org/2000/svg" 
+            xmlns:xlink="http://www.w3.org/1999/xlink" 
+            version="1.1"
+          >
+            <g transform="translate(419.5919098635898 346.4461440853622)">
+              <path 
+                id="blob-1" 
+                d="M4.6 -57.8C9.2 -5.3 18.5 -10.7 81 -10.7C143.5 -10.7 259.2 -5.3 291 18.3C322.7 42 270.5 84 222.9 109.8C175.3 135.7 132.4 145.3 96 137.2C59.7 129 29.8 103 -7.2 115.4C-44.2 127.8 -88.3 178.7 -137.8 194.4C-187.3 210.2 -242.2 190.8 -239.8 152.6C-237.4 114.3 -177.7 57.2 -155.3 12.9C-132.9 -31.3 -147.9 -62.7 -154.5 -108.3C-161.2 -153.9 -159.6 -213.8 -132.5 -253.3C-105.3 -292.8 -52.7 -311.9 -26.3 -266.3C0 -220.7 0 -110.3 4.6 -57.8" 
+                fill="#68e757"
+              ></path>
+            </g>
+            <g 
+              class="blobs" 
+              transform="translate(500.2373891646196 256.03556354588545)"
+            >
+              <path 
+                id="blob-2" 
+                d="M67.4 -98.5C107.1 -93.8 172.6 -115.6 187.4 -103.6C202.1 -91.7 166.1 -45.8 161.4 -2.7C156.8 40.5 183.6 81 193.2 135.1C202.8 189.3 195.1 257 160.1 262.4C125 267.8 62.5 210.9 3.3 205.3C-56 199.7 -112 245.3 -112 219.7C-112 194 -56 97 -89 48.5C-122 0 -244 0 -282.7 -22.3C-321.4 -44.7 -276.7 -89.3 -233.5 -120.1C-190.2 -150.8 -148.4 -167.6 -109.7 -173C-71 -178.3 -35.5 -172.2 -10.8 -153.4C13.8 -134.6 27.7 -103.3 67.4 -98.5" 
+                fill="#27bbc1"
+              ></path>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const tween = KUTE.fromTo('#blob-1', { 
+          path: '#blob-1' 
+        }, 
+        {
+          path: '#blob-2' 
+        },
+        { 
+          repeat: 1000, 
+          duration: 3000, 
+          yoyo: true 
+        }
+      )
+
+      tween.start()
+    </script>
+  </section>
+
+  <img src="./assets/layered-waves-2-flipped.svg" alt="waves" class="waves">
+
+  <footer>
+    <div class="container footer__container">
+      <span class="copyright">
+        Copyright © 2023 Frederick Nguyen
+        <br>
+        All Rights Reserved
+      </span>
+      <a class="footer__logo--anchor" href="#home-section">
+        <figure class="footer__logo--wrapper">
+          <img id="footer__logo" src="./assets/footer__logo.PNG" alt="Fred Nguyen">
+        </figure>
+      </a>
+      <figure class="footer__img--wrapper">
+        <img id="footer__img" src="./assets/react.svg" alt="Code Thinking">
+      </figure>
+  </div>
+  </footer>
+  
+  <!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
+  <script src="particles.js"></script>
+</body>
+</html>
